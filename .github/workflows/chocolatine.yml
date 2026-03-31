@@ -1,0 +1,7 @@
+name: Github Actions
+on: [push, pull-request]
+jobs:
+    Explore-Github-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this job was sucsesfully done"
