@@ -9,6 +9,6 @@ jobs:
         run: echo "cette branche ne doit pas être utilisée"
              exit 1
       - name: checking_repository_name
-        if: github. == 'git@github.com:EpitechPGE1-2025/G-DOP-200-RUN-2-1-chocolatine-1.git'
+        if: github.ref == 'git@github.com:EpitechPGE1-2025/G-DOP-200-RUN-2-1-chocolatine-1.git'
         run: exit 1
 
