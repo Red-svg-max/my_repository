@@ -6,5 +6,8 @@ jobs:
     steps:
       - name: Run only on main
         if: github.ref == 'refs/heads/main'
-        run: echo "this should run only on main"
+        run: exit 1
+      - name: checking_repository
+        if: github.ref == 'git@github.com:EpitechPGE1-2025/G-DOP-200-RUN-2-1-chocolatine-1.git'
+        run: exit 1
 
