@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run only on main
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/no-ga'
         run: exit 1
       - name: checking_repository
         if: github.ref == 'git@github.com:EpitechPGE1-2025/G-DOP-200-RUN-2-1-chocolatine-1.git'
