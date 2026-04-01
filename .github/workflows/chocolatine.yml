@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run only on main
-        if: github.ref == 'refs/heads/main'
-        run: echo "this should run only on main"
+        if: github.ref == 'refs/heads/no-ga'
+        run: echo "cette branche ne doit pas être utilisée"
+             exit 1
 
