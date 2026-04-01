@@ -3,7 +3,7 @@ on: [push, pull_request]
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
-    steps:
-        if: github.ref == 'refs/heads/main'
-        run: echo "this should run only on main"
+    -steps:
+         if: github.ref == 'refs/heads/main'
+         run: echo "this should run only on main"
 
