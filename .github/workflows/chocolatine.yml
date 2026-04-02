@@ -2,10 +2,12 @@ name: Github Actions
 on: 
     push:
         branches-ignore:
-          - 'no-ga/**'
+          - 'no-ga/*'
+          - 'no-ga'
     pull_request:
         branches-ignore:
-          - 'no-ga/**'
+          - 'no-ga/*'
+          - 'no-ga'
     
 jobs:
   Explore-Github-Actions:
