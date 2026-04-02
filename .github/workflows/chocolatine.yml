@@ -1,13 +1,18 @@
 name: Github Actions
-on: [push, pull_request]
+on: 
+    push:
+        branches-ignore:
+          - no-ga
+    pull_request:
+        branches-ignore:
+          - no-ga
+    
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Dis bonjour
+      - name: 
         run: echo "Bonjour depuis github action"
-      - name: Afficher la date
+      - name: 
         run: date
-      - name: Lister les fichiers
-        run: ls -la
 
