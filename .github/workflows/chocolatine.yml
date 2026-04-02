@@ -2,17 +2,17 @@ name: Github Actions
 on: 
     push:
         branches-ignore:
-          - no-ga/
+          - 'no-ga/'
     pull_request:
         branches-ignore:
-          - no-ga/
+          - 'no-ga/'
     
 jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: 
-        run: echo "Bonjour depuis github action"
+      - name: check-repository
+        run: 
       - name: 
         run: date
 
