@@ -4,10 +4,10 @@ jobs:
   Explore-Github-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Run only on main
-        if: github.ref == 'refs/heads/no-ga'
-        run: exit 1
-      - name: checking_repository_name
-        if: github.ref == 'git@github.com:EpitechPGE1-2025/G-DOP-200-RUN-2-1-chocolatine-1.git'
-        run: exit 1
+      - name: Dis bonjour
+        run: echo "Bonjour depuis github action"
+      - name: Afficher la date
+        run: date
+      - name: Lister les fichiers
+        run: ls -la
 
